@@ -1,6 +1,6 @@
-# 📑 Informe del Proyecto: [Nombre de tu Aplicación]
+# 📑 Informe del Proyecto: SaludTasks
 
-Este documento detalla el desarrollo de la aplicación **[Nombre de tu Aplicación]**, enfocándose en el rol de la inteligencia artificial como herramienta de asistencia, la validación del código, las decisiones de diseño y el tiempo dedicado.
+Este documento detalla el desarrollo de la aplicación **SaludTasks**, enfocándose en el rol de la inteligencia artificial como herramienta de asistencia, la validación del código, las decisiones de diseño y el tiempo dedicado.
 
 ---
 
@@ -9,29 +9,17 @@ Este documento detalla el desarrollo de la aplicación **[Nombre de tu Aplicaci�
 A lo largo del desarrollo de este proyecto, la IA fue una herramienta clave para agilizar y mejorar el proceso.  
 Las siguientes partes del código fueron generadas, modificadas o asistidas por IA:
 
-- **[Descripción de la funcionalidad o componente]**: Por ejemplo, *"El esqueleto inicial para el componente EditTaskPopup.jsx y la lógica para gestionar su estado."*
+- **Prácticamente todo el frontend fue realizado por la IA o modificado por ella**
 
-- **[Descripción de la funcionalidad o componente]**: Por ejemplo, *"Las clases de Tailwind CSS para el toggle de modo oscuro y los estilos de los componentes TaskList y TaskForm."*
-
-- **[Descripción de la funcionalidad o componente]**: Por ejemplo, *"El script de despliegue en package.json para encadenar la creación de la base de datos con el inicio del servidor."*
-
-- **[Descripción de la funcionalidad o componente]**: Por ejemplo, *"La corrección de errores específicos, como la solución para el TypeError: onEditTask is not a function en React."*
+- **El backend también fue creado por IA en su gran mayorIA xd**
 
 ---
 
 ## 🔍 Validación del Código
 
-El código generado por la IA no fue implementado directamente sin revisión.  
-Se siguió un proceso de validación para asegurar su funcionalidad y calidad:
-
-- **Revisión Línea por Línea**: [Describe tu proceso de revisión.  
-  Ejemplo: *"Cada bloque de código propuesto por la IA fue revisado para entender su lógica, sintaxis y su integración con el resto de la aplicación."*]
-
-- **Pruebas de Funcionalidad**: [Explica cómo probaste el código.  
-  Ejemplo: *"Se ejecutaron pruebas manuales en el navegador para verificar que las nuevas funcionalidades, como la edición de tareas y el cambio de tema, funcionaran como se esperaba."*]
-
-- **Modificaciones y Refactorización**: [Detalla las modificaciones que hiciste.  
-  Ejemplo: *"Las sugerencias de estilo de Tailwind CSS fueron ajustadas para que coincidieran con la estética visual deseada."*]
+- La validación de código para un nuevo archivo consistió en **ejecutar pruebas**, ver si funcionaba e iterar y ajustar a las necesidades particulares.
+- La validación de código al modificar un archivo consistió en identificar las diferencias, ver que tiene la **intención** de hacer lo que le pedí e insertar el código para ejecutar las pruebas.
+- Por último, **si** se modificó código entregado por IA para ajustes.
 
 ---
 
@@ -39,11 +27,8 @@ Se siguió un proceso de validación para asegurar su funcionalidad y calidad:
 
 Las siguientes decisiones de diseño y arquitectura se tomaron con base en la eficiencia y la practicidad, a menudo influenciadas por las sugerencias de la IA:
 
-- **[Nombre de la decisión]**: [Explica la decisión y por qué la tomaste.  
-  Ejemplo: *"El uso de la clase de Tailwind para el modo oscuro (`darkMode: 'class'`) fue una decisión propuesta por la IA. Opté por ella porque ofrece una forma nativa y eficiente de gestionar los temas, evitando la necesidad de JavaScript adicional para el cambio de estilos."*]
-
-- **[Nombre de la decisión]**: [Explica la decisión.  
-  Ejemplo: *"La estructura de los componentes TaskList y TaskForm se organizó para mantener la lógica de estado en el componente padre (`App.jsx`), lo que facilita el flujo de datos y el manejo de los eventos entre componentes."*]
+- Se decidió utilizar **Express** para el backend y **React + Vite** para el frontend, sugerido por la IA, para mantener un mismo lenguaje en ambos proyectos.
+- Se decidió utilizar **tailwindcss** para los estilos de la página, por la razón de que SaludTech utiliza esta tecnología y además tiene para configurar un "Dark mode"<3.
 
 ---
 
@@ -51,15 +36,19 @@ Las siguientes decisiones de diseño y arquitectura se tomaron con base en la ef
 
 Hubo algunas partes del código que requirieron ajustes para funcionar correctamente o para adaptarse mejor a las necesidades del proyecto:
 
-- **[Describe la parte que no funcionó como se esperaba]**:  
-  Ejemplo: *"La primera sugerencia para la corrección del CSS del popup no resolvió completamente el problema de alineación. Tuve que ajustar las clases Flexbox en las etiquetas de los checkboxes (`.checkbox-label`) para lograr la alineación vertical correcta."*
+- **Tailwindcss**: Se le pidió a la IA que me ayudara a configurar tailwindcss para los estilos y para hacer un funcionar el boton de dark mode. No se obtuvo un resultado positivo al utilizar a la IA junto con la documentación de tailwind + Vite, por lo que se decidió proceguir solo con la documentación de tailwind y se logró el objetivo final 💃
 
-- **[Describe otro ajuste]**:  
-  Ejemplo: *"Los comandos de la terminal para la configuración de Tailwind CSS (`npx tailwindcss init -p`) no funcionaron inicialmente. Tuve que reajustar y limpiar la instalación de npm para que el comando se ejecutara sin errores."*
+- **PATCH**: La IA entregó solo la ruta "PUT" en el backend y preferí agregar la ruta "PATCH" para utilizarla al momento de marcar como completada una tarea.
+
+- **Consulta IA**: En el servicio que consume la api de gemini, la IA se había equivocado con el nombre del modelo. Se acudió a la documentación y se escogió un modelo acorde.
 
 ---
 
 ## ⏱️ Tiempo del Ejercicio
 
-El tiempo total invertido en este ejercicio, desde el inicio del proyecto hasta el despliegue final, fue de aproximada
+El tiempo total invertido en este ejercicio, desde el inicio del proyecto hasta el despliegue final, fue de aproximadamente **6 horas**. Este tiempo se dividió en las siguientes fases: 
+- Desarrollo del Frontend: 2 horas.
+- Desarrollo del Backend: 1.5 horas.
+- Despliegue del Frontend y Backend: 1 horas.
+- Depuración y Solución de Errores: 1.5 horas.
 
