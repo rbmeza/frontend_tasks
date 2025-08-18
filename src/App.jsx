@@ -6,7 +6,7 @@ import LoadingSpinner from './components/LoadingSpinner';
 import './App.css';
 
 // URL base de tu backend. Asegúrate de que esta URL sea la correcta.
-const API_URL = 'https://backend-tasks-9khc.onrender.com/tasks';
+const API_URL = process.env.API_URL || 'http://localhost:3000/tasks';
 
 function App() {
   const [tasks, setTasks] = useState([]);
