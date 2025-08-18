@@ -1,6 +1,10 @@
 # 📑 Informe del Proyecto: SaludTasks
 
 Este documento detalla el desarrollo de la aplicación **SaludTasks**, enfocándose en el rol de la inteligencia artificial como herramienta de asistencia, la validación del código, las decisiones de diseño y el tiempo dedicado.
+**IMPORTANTE:** 
+- Se generan 3 tareas de ejemplo en la BDD (Sin estimación por la IA)
+- Las tareas nuevas y las tareas editadas consultan a la IA por una estimación.
+- La IA entrega por ejemplo "1 hora (85%)", donde el porcentaje es la seguridad que tiene respecto de la estimación.
 
 ---
 
