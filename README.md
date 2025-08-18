@@ -37,7 +37,7 @@ Las siguientes decisiones de diseño y arquitectura se tomaron con base en la ef
 
 Hubo algunas partes del código que requirieron ajustes para funcionar correctamente o para adaptarse mejor a las necesidades del proyecto:
 
-- **Tailwindcss**: Se le pidió a la IA que me ayudara a configurar tailwindcss para los estilos y para hacer un funcionar el boton de dark mode. No se obtuvo un resultado positivo al utilizar a la IA junto con la documentación de tailwind + Vite, por lo que se decidió proceguir solo con la documentación de tailwind y se logró el objetivo final 💃
+- **Tailwindcss**: Se le pidió a la IA que me ayudara a configurar tailwindcss para los estilos y para hacer un funcionar el boton de dark mode. No se obtuvo un resultado positivo al utilizar a la IA junto con la documentación de tailwind + Vite, por lo que se decidió proseguir solo con la documentación de tailwind y se logró el objetivo final 💃
 
 - **PATCH**: La IA entregó solo la ruta "PUT" en el backend y preferí agregar la ruta "PATCH" para utilizarla al momento de marcar como completada una tarea.
 
