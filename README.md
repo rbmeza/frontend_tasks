@@ -29,6 +29,7 @@ Las siguientes decisiones de diseño y arquitectura se tomaron con base en la ef
 
 - Se decidió utilizar **Express** para el backend y **React + Vite** para el frontend, sugerido por la IA, para mantener un mismo lenguaje en ambos proyectos.
 - Se decidió utilizar **tailwindcss** para los estilos de la página, por la razón de que SaludTech utiliza esta tecnología y además tiene para configurar un "Dark mode"<3.
+- Se escogió **SQLite** para almacenar los datos debido a que un archivo .json era muy precario y SQLite es perfecta para este tipo de desarrollos. Ambas alternativas sugeridas por la IA.
 
 ---
 
