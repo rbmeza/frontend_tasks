@@ -24,7 +24,6 @@ function App() {
     try {
       const response = await fetch(API_URL);
       const tasksData = await response.json();
-      console.log('Tareas obtenidas:', tasksData);
       setTasks(tasksData);
     } catch (error) {
       console.error('Error al obtener las tareas:', error);
@@ -40,7 +39,6 @@ function App() {
     } else {
       document.documentElement.classList.remove('dark');
     }
-    console.log(`Tema cambiado a: ${theme}`);
   }, [theme]);
 
   // Función para cambiar el tema
@@ -68,7 +66,7 @@ function App() {
 
   const handleToggleCompletion = async (taskId, completed) => {
     try {
-      console.log(JSON.stringify({ completed }));
+      setIsLoading(true);
       await fetch(`${API_URL}/${taskId}`, {
         method: 'PATCH',
         headers: { 'Content-Type': 'application/json' },
@@ -79,6 +77,8 @@ function App() {
       ));
     } catch (error) {
       console.error('Error al actualizar la tarea:', error);
+    } finally {
+      setIsLoading(false);
     }
   };
 
@@ -112,8 +112,6 @@ function App() {
         body: JSON.stringify(updatedTask),
       });
       const result = await response.json();
-
-      console.log('Tarea actualizada:', result);
 
       // Actualiza la lista de tareas en el estado
       setTasks(tasks.map(task =>
