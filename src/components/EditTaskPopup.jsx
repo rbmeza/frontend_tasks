@@ -18,7 +18,7 @@ function EditTaskPopup({ task, onSave, onClose }) {
     };
 
     return (
-        <div className="fixed inset-0 bg-gray-100 dark:bg-gray-900 flex items-center justify-center p-4 z-50">
+        <div className="fixed inset-0 backdrop-blur-sm flex items-center justify-center p-4 z-50">
             <div className="bg-white dark:bg-gray-800 rounded-lg shadow-xl w-full max-w-md transform transition-all">
                 <div className="p-6">
                     <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
